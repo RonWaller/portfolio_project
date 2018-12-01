@@ -8,7 +8,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   font-family: 'Archivo Black', sans-serif;
   font-weight: 400;
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
 }
 
 .gigantic {
@@ -57,11 +56,26 @@ h1, h2, h3, h4, h5, h6 {
 
 // Basic Text Style
 
-p {
+body {
   font-family: 'Roboto', sans-serif;
-  margin: 0 0 20px 0;
+  font-size: 16px;
   font-weight: 400;
-  font-size: 14px;
+  line-height: 1.6;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+#nameheading {
+  color: $white;
+}
+
+#nameheading #secondary {
+  color: $secondary;
+}
+
+.hero h3 {
+  color: $white;
 }
 
 hr {
