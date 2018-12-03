@@ -2,13 +2,15 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,900");
 * {
   margin: 0;
-  padding: 0; }
-
-html {
+  padding: 0;
   box-sizing: border-box; }
 
 body {
+  box-sizing: border-box;
   background-image: url("/build/img/homepage-mobile.jpg");
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,7 +19,7 @@ body {
 body::after {
   content: '';
   background-color: rgba(40, 48, 68, 0.5);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -25,8 +27,10 @@ body::after {
   z-index: -1; }
 
 .wrapper {
+  box-sizing: border-box;
   width: 100%;
-  height: 100vh; }
+  height: 100%;
+  padding-top: 25px; }
 
 .hero {
   margin-left: 15px; }
@@ -64,7 +68,6 @@ body {
   display: flex;
   width: 100%;
   height: 50px;
-  margin-top: 20px;
   margin-bottom: 50px;
   padding: 0 15px;
   justify-content: space-between;
@@ -79,24 +82,25 @@ body {
   width: 50px;
   height: 50px; }
 
-#menubars {
-  display: inline-block; }
-
 #menubars i, #menu i {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   color: #e54829;
   font-size: 25px;
   cursor: pointer; }
 
 #menu {
-  position: absolute;
+  position: fixed;
   padding-top: 30px;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(40, 48, 68, 0.9); }
+  background-color: rgba(40, 48, 68, 0.9);
+  visibility: hidden;
+  transition: all 0.5s ease-in; }
+  #menu.show {
+    visibility: visible; }
   #menu i {
     position: absolute;
     top: 20px;
