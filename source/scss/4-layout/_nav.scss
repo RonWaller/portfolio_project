@@ -36,20 +36,24 @@
   height: 100vh;
   background-color: rgba(40, 48, 68, .9);
   visibility: hidden;
-  transition: all 0.5s ease-in;
+  opacity: 0;
+  transform: translate(0, -100%);
+  transition: all 0.7s ease-in-out 0.5s;
 
   &.show {
     visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
   }
 
   & i {
     position: absolute;
-    top: 20px;
-    right: 15px;
+    top: 34px;
+    right: 13px;
   }
 
   & .menuitems {
-    margin-top: 30px;
+    margin-top: 50px;
   }
    
   & ul li {
