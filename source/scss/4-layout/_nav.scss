@@ -8,17 +8,6 @@
   align-items: center;
 }
 
-#logo {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-}
-
-#logo img {
-  width: 50px;
-  height: 50px;
-}
-
 #menubars i, #menu i {
   width: 25px;
   height: 25px;
@@ -91,7 +80,7 @@
     transition-delay: 0.5s;
   }
   
-    li:hover {
+    li:hover, li:active {
       background-color: rgba(229, 72, 41, .4);
     }
     li a.active {

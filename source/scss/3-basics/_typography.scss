@@ -21,7 +21,18 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-#nameheading {
+.hero h3 {
+  font-size: 1.2rem;
+}
+
+.hero #nameheading {
+  font-size: 3rem;
+  margin: 0;
+  line-height: 1.1;
+
+}
+
+.hero h3, #nameheading, p {
   color: $white;
 }
 
@@ -29,6 +40,11 @@ body {
   color: $secondary;
 }
 
-.hero h3 {
+.aboutMe h1 {
   color: $white;
+  text-transform: uppercase;
+
+  & p {
+    font-size: 1.2rem;
+  }
 }

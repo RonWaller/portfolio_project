@@ -32,9 +32,6 @@ body::after {
   height: 100%;
   padding-top: 25px; }
 
-.hero {
-  margin-left: 15px; }
-
 a {
   color: #fff;
   text-decoration: none;
@@ -55,14 +52,25 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
-#nameheading {
+.hero h3 {
+  font-size: 1.2rem; }
+
+.hero #nameheading {
+  font-size: 3rem;
+  margin: 0;
+  line-height: 1.1; }
+
+.hero h3, #nameheading, p {
   color: #fff; }
 
 #nameheading #secondary {
   color: #e54829; }
 
-.hero h3 {
-  color: #fff; }
+.aboutMe h1 {
+  color: #fff;
+  text-transform: uppercase; }
+  .aboutMe h1 p {
+    font-size: 1.2rem; }
 
 .navbar {
   display: flex;
@@ -72,15 +80,6 @@ body {
   padding: 0 15px;
   justify-content: space-between;
   align-items: center; }
-
-#logo {
-  display: inline-block;
-  width: 50px;
-  height: 50px; }
-
-#logo img {
-  width: 50px;
-  height: 50px; }
 
 #menubars i, #menu i {
   width: 25px;
@@ -134,7 +133,7 @@ body {
     transition-delay: 0.4s; }
   #menu .menuitems li:nth-child(4) {
     transition-delay: 0.5s; }
-  #menu li:hover {
+  #menu li:hover, #menu li:active {
     background-color: rgba(229, 72, 41, 0.4); }
   #menu li a.active {
     color: #e54829; }
@@ -144,3 +143,30 @@ body {
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+.hero {
+  margin-left: 15px; }
+
+#logo {
+  display: inline-block;
+  width: 50px;
+  height: 50px; }
+
+#logo img {
+  width: 50px;
+  height: 50px; }
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .aboutMe img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #e54829; }
+  .aboutMe p {
+    width: 100%;
+    padding: 0 30px; }
+  .aboutMe img, .aboutMe h1 {
+    margin-bottom: 1rem; }

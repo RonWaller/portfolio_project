@@ -1,0 +1,27 @@
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid $secondary;
+  }
+
+  & p {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  & img, & h1 {
+    margin-bottom: 1rem;
+  }
+
+}
+
+
+
+
