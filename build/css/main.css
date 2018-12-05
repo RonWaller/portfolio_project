@@ -66,10 +66,10 @@ body {
 #nameheading #secondary {
   color: #e54829; }
 
-.aboutMe h1 {
+.aboutMe h1, .myWork h1 {
   color: #fff;
   text-transform: uppercase; }
-  .aboutMe h1 p {
+  .aboutMe h1 p, .myWork h1 p {
     font-size: 1.2rem; }
 
 .navbar {
@@ -170,3 +170,9 @@ body {
     padding: 0 30px; }
   .aboutMe img, .aboutMe h1 {
     margin-bottom: 1rem; }
+
+.myWork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
