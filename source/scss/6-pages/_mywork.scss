@@ -4,3 +4,30 @@
   justify-content: center;
   align-items: center;
 }
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects .card{
+  width: 100%;
+  margin: 25px auto;
+  padding: 0 30px;
+  white-space: nowrap;
+
+  & img {
+    width: 315px;
+    height: 200px;
+  }
+}
+
+.projects .card-1 .overlay {
+  background-color: $white;
+  color: $primary;
+  height: 200px;
+  z-index: 1;
+
+}

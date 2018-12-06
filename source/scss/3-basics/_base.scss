@@ -15,12 +15,11 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 
 body::after {
   content: '';
-  background-color: rgba(40, 48, 68, .5);
+  background-color: rgba(40, 48, 68, .8);
   position: fixed;
   top: 0;
   left: 0;

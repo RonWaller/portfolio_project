@@ -13,12 +13,11 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden; }
+  background-repeat: no-repeat; }
 
 body::after {
   content: '';
-  background-color: rgba(40, 48, 68, 0.5);
+  background-color: rgba(40, 48, 68, 0.8);
   position: fixed;
   top: 0;
   left: 0;
@@ -167,7 +166,8 @@ body {
     border: 2px solid #e54829; }
   .aboutMe p {
     width: 100%;
-    padding: 0 30px; }
+    padding: 0 30px;
+    font-weight: 500; }
   .aboutMe img, .aboutMe h1 {
     margin-bottom: 1rem; }
 
@@ -176,3 +176,24 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.projects .card {
+  width: 100%;
+  margin: 25px auto;
+  padding: 0 30px;
+  white-space: nowrap; }
+  .projects .card img {
+    width: 315px;
+    height: 200px; }
+
+.projects .card-1 .overlay {
+  background-color: #fff;
+  color: #283044;
+  height: 200px;
+  z-index: 1; }
