@@ -13,21 +13,61 @@
 }
 
 .projects .card{
-  width: 100%;
+  position: relative;
+  width: 315px;
+  height: 200px;
   margin: 25px auto;
-  padding: 0 30px;
-  white-space: nowrap;
 
   & img {
+    position: relative;
     width: 315px;
     height: 200px;
+    cursor: pointer;
   }
+
+  & .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    color: $primary;
+    height: 200px;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    overflow: hidden;
+
+    & .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      width: 90%;
+      margin: auto;
+      opacity: 0;
+      transition: all .5s ease-in-out .5s;
+  
+      & p {
+        color: $primary;
+        font-size: .9rem;
+        padding: 0 5px;
+      }
+    }
+    
+  }
+
+  &:hover .overlay,
+  &:active .overlay{
+      // visibility: visible;
+      opacity: 1;
+          
+    & .content {
+      opacity: 1;
+    }
+  }
+ 
 }
 
-.projects .card-1 .overlay {
-  background-color: $white;
-  color: $primary;
-  height: 200px;
-  z-index: 1;
 
-}
+

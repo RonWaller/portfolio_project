@@ -184,16 +184,43 @@ body {
   align-items: center; }
 
 .projects .card {
-  width: 100%;
-  margin: 25px auto;
-  padding: 0 30px;
-  white-space: nowrap; }
-  .projects .card img {
-    width: 315px;
-    height: 200px; }
-
-.projects .card-1 .overlay {
-  background-color: #fff;
-  color: #283044;
+  position: relative;
+  width: 315px;
   height: 200px;
-  z-index: 1; }
+  margin: 25px auto; }
+  .projects .card img {
+    position: relative;
+    width: 315px;
+    height: 200px;
+    cursor: pointer; }
+  .projects .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    color: #283044;
+    height: 200px;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    overflow: hidden; }
+    .projects .card .overlay .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      width: 90%;
+      margin: auto;
+      opacity: 0;
+      transition: all .5s ease-in-out .5s; }
+      .projects .card .overlay .content p {
+        color: #283044;
+        font-size: .9rem;
+        padding: 0 5px; }
+  .projects .card:hover .overlay,
+  .projects .card:active .overlay {
+    opacity: 1; }
+    .projects .card:hover .overlay .content,
+    .projects .card:active .overlay .content {
+      opacity: 1; }
