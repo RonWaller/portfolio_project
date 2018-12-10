@@ -1,0 +1,43 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  & i {
+  color: $white;
+  font-size: 30px;
+  }
+}
+
+.icon_bkg {
+  width: 60px;
+  height: 60px;
+  margin: 10px auto;
+  padding-top: 15px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: $secondary;
+
+}
+
+.social {
+  margin: 25px 0;
+
+  & .icons {
+    display: flex;
+    padding: 15px 10px;
+
+    & .icon_bkg {
+      margin: 0 10px;
+    }
+  }
+
+
+  & a i {
+    padding: 0 10px;
+  }
+}
+
+

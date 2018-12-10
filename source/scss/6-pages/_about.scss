@@ -1,8 +1,11 @@
 .aboutMe {
   display: flex;
+  max-width: 70%;
+  margin: 0 auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
   & img {
     width: 150px;

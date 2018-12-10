@@ -76,11 +76,19 @@ body {
 #nameheading #secondary {
   color: #e54829; }
 
-.aboutMe h1, .myWork h1 {
+.aboutMe h1,
+.myWork h1,
+.contact h1 {
   color: #fff;
   text-transform: uppercase; }
-  .aboutMe h1 p, .myWork h1 p {
+  .aboutMe h1 p,
+  .myWork h1 p,
+  .contact h1 p {
     font-size: 1.2rem; }
+
+.contact h5 {
+  color: #fff;
+  font-size: 1rem; }
 
 .navbar {
   display: flex;
@@ -168,9 +176,12 @@ body {
 
 .aboutMe {
   display: flex;
+  max-width: 70%;
+  margin: 0 auto;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
   .aboutMe img {
     width: 150px;
     height: 150px;
@@ -254,3 +265,32 @@ body {
     .projects .card:hover .overlay .content,
     .projects .card:active .overlay .content {
       opacity: 1; }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .contact i {
+    color: #fff;
+    font-size: 30px; }
+
+.icon_bkg {
+  width: 60px;
+  height: 60px;
+  margin: 10px auto;
+  padding-top: 15px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #e54829; }
+
+.social {
+  margin: 25px 0; }
+  .social .icons {
+    display: flex;
+    padding: 15px 10px; }
+    .social .icons .icon_bkg {
+      margin: 0 10px; }
+  .social a i {
+    padding: 0 10px; }
