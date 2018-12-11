@@ -9,6 +9,12 @@
   color: $white;
   font-size: 30px;
   }
+
+  & p {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 .icon_bkg {
@@ -20,6 +26,11 @@
   border-radius: 50%;
   background-color: $secondary;
 
+}
+
+.email a {
+  text-decoration: solid underline $white;
+  
 }
 
 .social {
@@ -34,10 +45,14 @@
     }
   }
 
-
   & a i {
     padding: 0 10px;
   }
 }
 
+@media only screen and (min-width: 601px) {
+  .contact h5 {
+    font-size: 1.2rem;
+  }
+}
 

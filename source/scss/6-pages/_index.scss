@@ -13,3 +13,13 @@
   width: 50px;
   height: 50px;
 }
+
+@media only screen and (min-width: 601px) {
+  .hero #nameheading {
+    font-size: 4rem;
+  }
+
+  .hero h3{
+    font-size: 1.5rem;
+  }
+}

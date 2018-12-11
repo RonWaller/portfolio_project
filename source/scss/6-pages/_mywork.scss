@@ -97,5 +97,19 @@
  
 }
 
+@media only screen and (min-width: 768px) {
+  .projects {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin: 25px auto 0 auto;
 
+    & .card {
+      margin: 0;
+      // padding-left: 20px;
+    }
+
+  }
+}
 

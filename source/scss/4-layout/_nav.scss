@@ -89,3 +89,35 @@
     }
 }
 
+@media only screen and (min-width: 768px) {
+  #menu {
+    position: static;
+    height: 100px;
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0,0);
+    z-index: 1;
+    background-color: transparent;
+
+    & i#close {
+      visibility: hidden;
+    }
+
+    & .menuitems {
+      text-align: right;
+      margin: 0;
+    }
+
+    & .menuitems li {
+      margin: 0 15px;
+      display: inline-block;
+      opacity: 1;
+      transform: translate(0,0);
+      transition: .2s ease-in-out 0s;
+    }
+  }
+
+  #menubars {
+    visibility: hidden;
+  }
+}
