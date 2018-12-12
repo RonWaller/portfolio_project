@@ -13,7 +13,7 @@
   & p {
     width: 50%;
     text-align: center;
-    margin: 0 auto;
+    margin: 25px auto;
   }
 }
 
@@ -55,4 +55,24 @@
     font-size: 1.2rem;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .contact p {
+    font-size: 1.1rem;
+    margin: 35px 0;
+    line-height: 1.9;
+  }
+
+  .contact .email {
+    margin: 35px 0;
+  }
+
+  .contact .social {
+    margin: 40px 0;
+  }
+
+  .social .icons .icon_bkg {
+    margin: 0 25px;
+  }
+} 
 

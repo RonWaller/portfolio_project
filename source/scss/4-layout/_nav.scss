@@ -89,7 +89,23 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+  #menu {
+    visibility: hidden;
+    transition: none;
+    opacity: 0;
+  }
+  .menuitems li {
+    transition: none;
+  }
+
+}
+
 @media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 0 0 0 25px;
+  }
+
   #menu {
     position: static;
     height: 100px;
@@ -98,6 +114,7 @@
     transform: translate(0,0);
     z-index: 1;
     background-color: transparent;
+    transition: none;
 
     & i#close {
       visibility: hidden;
@@ -110,10 +127,13 @@
 
     & .menuitems li {
       margin: 0 15px;
+      font-size: 1rem;
+      padding: 5px 0;
+      letter-spacing: .2rem;
       display: inline-block;
       opacity: 1;
       transform: translate(0,0);
-      transition: .2s ease-in-out 0s;
+      transition: none;
     }
   }
 

@@ -99,15 +99,19 @@
 
 @media only screen and (min-width: 768px) {
   .projects {
-    width: 85%;
+    width: 95%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    margin: 25px auto 0 auto;
+    grid-template-columns: 
+    repeat(auto-fill, minmax(315px, 315px));
+    grid-gap: 1.5rem;
+    margin: 40px auto 0 auto;
 
     & .card {
       margin: 0;
-      // padding-left: 20px;
+      max-width: 315px;
+      max-height: 200px;
+      grid-auto-flow: row dense;
+      
     }
 
   }
