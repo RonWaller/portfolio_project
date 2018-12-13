@@ -35,3 +35,10 @@ body::after {
   padding-top: 25px;
 }
 
+@media only screen and (min-width: 768px) {
+  background-image: url('/build/img/homepage-tablet-portrait.jpg');
+} 
+
+@media only screen and (min-width: 1200px) {
+  background-image: url('/build/img/homepage-desktop.jpg');
+}

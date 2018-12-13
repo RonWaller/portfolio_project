@@ -1,5 +1,5 @@
 .hero {
-  // width: 70%;
+  padding-top: 50px;
   margin-left: 30px;
 }
 
@@ -15,11 +15,40 @@
 }
 
 @media only screen and (min-width: 601px) {
-  .hero #nameheading {
-    font-size: 4rem;
-  }
+  .hero {
+    margin-left: 50px;
 
-  .hero h3{
-    font-size: 1.5rem;
+    & #nameheading {
+      font-size: 4rem;
+    }
+
+    & h3{
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    margin-left: 50px;
+    padding-top: 75px;
+
+    & #nameheading {
+      font-size: 5rem;
+    }
+
+    & h3{
+      font-size: 2rem;
+    }
+  }
+} 
+
+@media only screen and (min-width: 992px) {
+
+} 
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    margin-left: 75px;
   }
 }
