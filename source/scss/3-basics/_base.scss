@@ -8,7 +8,7 @@
  
 body {
   box-sizing: border-box;
-  background-image: url('/img/homepage-mobile.jpg');
+  background-image: url('/build/img/homepage-mobile.jpg');
   width: 100%;
   height: 100vh;
   background-attachment: fixed;
@@ -36,9 +36,9 @@ body::after {
 }
 
 @media only screen and (min-width: 768px) {
-  background-image: url('/img/homepage-tablet-portrait.jpg');
+  background-image: url('/build/img/homepage-tablet-portrait.jpg');
 } 
 
 @media only screen and (min-width: 1200px) {
-  background-image: url('/img/homepage-desktop.jpg');
+  background-image: url('/build/img/homepage-desktop.jpg');
 }

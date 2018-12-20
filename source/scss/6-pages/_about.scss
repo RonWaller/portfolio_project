@@ -7,12 +7,22 @@
   align-items: center;
   text-align: center;
 
-  & img {
+  & .img_aboutme {
+    background-image: url('/build/img/ronwallerbusiness_150w.png');
+    background-size: contain;
+    background-position: center center;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 2px solid $secondary;
+
   }
+  // & img {
+  //   width: 150px;
+  //   height: 150px;
+  //   border-radius: 50%;
+  //   border: 2px solid $secondary;
+  // }
 
   & p {
     width: 100%;
