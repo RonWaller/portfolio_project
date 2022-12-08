@@ -9,6 +9,6 @@
   "author": "Ron Waller",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^7.0.0"
+    "node-sass": "^7.0.3"
   }
 }
